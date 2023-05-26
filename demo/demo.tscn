@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://i83qfos07x4e"]
+
+[ext_resource type="Script" path="res://addons/chrisfurry_spritefonts/scripts/node_SpriteLabel.gd" id="1_okddw"]
+[ext_resource type="Resource" uid="uid://cm8hfgqpfs14" path="res://demo/demofont.tres" id="2_5lway"]
+
+[node name="demo" type="Node2D"]
+
+[node name="SpriteLabel2D" type="Node2D" parent="."]
+position = Vector2(448, 256)
+script = ExtResource("1_okddw")
+text = "WHO NEEDS MONOSPACING
+NOT ME
+WHAT'S A \"MONOSPACE IMAGE FONT\"
+SERIOUSLY I NEED TO KNOW"
+font = ExtResource("2_5lway")
+h_align = 1
+v_align = 1
+
+[node name="SpriteLabel2D2" type="Node2D" parent="."]
+position = Vector2(320, 192)
+script = ExtResource("1_okddw")
+text = "RIGHT AND BOTTOM ALIGN"
+font = ExtResource("2_5lway")
+h_align = 2
+v_align = 2
+
+[node name="SpriteLabel2D3" type="Node2D" parent="."]
+position = Vector2(576, 320)
+script = ExtResource("1_okddw")
+text = "LEFT AND TOP ALIGN"
+font = ExtResource("2_5lway")
