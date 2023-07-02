@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://ba0ui5gxydp6a"]
+
+[ext_resource type="Script" path="res://addons/chrisfurry_usefulutilities/scripts/res_SpriteFont.gd" id="1_lxnfq"]
+[ext_resource type="Texture2D" uid="uid://bc5g5aoakfl2g" path="res://demo/SmallFontDemo.png" id="2_fdlbl"]
+
+[resource]
+script = ExtResource("1_lxnfq")
+texture = ExtResource("2_fdlbl")
+h_frames = 26
+v_frames = 3
+character_spacing = 0
+space_extend = 0
+character_map = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,-+'\"_*!"

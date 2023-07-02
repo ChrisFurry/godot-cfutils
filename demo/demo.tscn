@@ -1,31 +1,37 @@
-[gd_scene load_steps=3 format=3 uid="uid://i83qfos07x4e"]
+[gd_scene load_steps=7 format=3 uid="uid://i83qfos07x4e"]
 
-[ext_resource type="Script" path="res://addons/chrisfurry_spritefonts/scripts/node_SpriteLabel.gd" id="1_okddw"]
-[ext_resource type="Resource" uid="uid://cm8hfgqpfs14" path="res://demo/demofont.tres" id="2_5lway"]
+[ext_resource type="Script" path="res://addons/chrisfurry_usefulutilities/scripts/node_SpriteLabel2D.gd" id="1_fwnur"]
+[ext_resource type="Resource" uid="uid://dk4n7f4xi6mpd" path="res://demo/demo_font1.tres" id="2_8h6bm"]
+[ext_resource type="Script" path="res://addons/chrisfurry_usefulutilities/scripts/node_ProgressBar2D.gd" id="3_nxv6h"]
+[ext_resource type="Texture2D" uid="uid://brchqa1jkcs7h" path="res://demo/BarFront.tres" id="4_xgl56"]
+[ext_resource type="Texture2D" uid="uid://ce7xgahe8whq2" path="res://demo/BarBack.tres" id="5_ty7vo"]
+[ext_resource type="Resource" uid="uid://ba0ui5gxydp6a" path="res://demo/demo_fontsmall.tres" id="6_i1ds6"]
 
 [node name="demo" type="Node2D"]
 
-[node name="SpriteLabel2D" type="Node2D" parent="."]
-position = Vector2(448, 256)
-script = ExtResource("1_okddw")
-text = "WHO NEEDS MONOSPACING
-NOT ME
-WHAT'S A \"MONOSPACE IMAGE FONT\"
-SERIOUSLY I NEED TO KNOW"
-font = ExtResource("2_5lway")
+[node name="SpriteLabelShowcase1" type="Node2D" parent="."]
+position = Vector2(120, 24)
+script = ExtResource("1_fwnur")
+text = "SPRITE FONTS DON'T HAVE TO BE
+MONOSPACE ONLY"
+font = ExtResource("2_8h6bm")
 h_align = 1
 v_align = 1
 
-[node name="SpriteLabel2D2" type="Node2D" parent="."]
-position = Vector2(320, 192)
-script = ExtResource("1_okddw")
-text = "RIGHT AND BOTTOM ALIGN"
-font = ExtResource("2_5lway")
-h_align = 2
-v_align = 2
+[node name="ProgressBarShowcase" type="Node2D" parent="."]
+position = Vector2(8, 80)
+script = ExtResource("3_nxv6h")
+progress = 0.337
+bar_size = 80
+bar_texture = ExtResource("4_xgl56")
+back_texture = ExtResource("5_ty7vo")
 
-[node name="SpriteLabel2D3" type="Node2D" parent="."]
-position = Vector2(576, 320)
-script = ExtResource("1_okddw")
-text = "LEFT AND TOP ALIGN"
-font = ExtResource("2_5lway")
+[node name="SpriteLabel2D" type="Node2D" parent="."]
+position = Vector2(8, 56)
+script = ExtResource("1_fwnur")
+text = "Progress bars are very *SIMPLE*
+Only requires a *BAR TEXTURE*
+But also takes a *BACK TEXTURE*
+
+Tiles with ATLASTEXTURES too!"
+font = ExtResource("6_i1ds6")

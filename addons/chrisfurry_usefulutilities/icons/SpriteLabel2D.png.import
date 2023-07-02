@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k43bcnj0tdjt"
-path="res://.godot/imported/SpriteLabel2D.png-502391c0b148029fbf63e8d1f0fd75ca.ctex"
+path="res://.godot/imported/SpriteLabel2D.png-b2357fde1ef2031dc38db747684a4669.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/chrisfurry_spritefonts/icons/SpriteLabel2D.png"
-dest_files=["res://.godot/imported/SpriteLabel2D.png-502391c0b148029fbf63e8d1f0fd75ca.ctex"]
+source_file="res://addons/chrisfurry_usefulutilities/icons/SpriteLabel2D.png"
+dest_files=["res://.godot/imported/SpriteLabel2D.png-b2357fde1ef2031dc38db747684a4669.ctex"]
 
 [params]
 

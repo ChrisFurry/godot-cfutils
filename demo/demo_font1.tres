@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dk4n7f4xi6mpd"]
+
+[ext_resource type="Script" path="res://addons/chrisfurry_usefulutilities/scripts/res_SpriteFont.gd" id="1_m5vgp"]
+[ext_resource type="Texture2D" uid="uid://7nj61gmk4s73" path="res://demo/SonicCDFont.png" id="2_1uytq"]
+
+[resource]
+script = ExtResource("1_m5vgp")
+texture = ExtResource("2_1uytq")
+h_frames = 16
+v_frames = 3
+character_spacing = 1
+space_extend = -8
+character_map = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'\""

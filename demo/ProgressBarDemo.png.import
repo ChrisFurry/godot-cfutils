@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct5ckresjqog7"
-path="res://.godot/imported/SpriteFont.png-9f1f2102a4e50a2f99e7fb90100f8e88.ctex"
+uid="uid://2ifdu5pu3qvs"
+path="res://.godot/imported/ProgressBarDemo.png-0f7baf81b31934ae335b54085e6e0512.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/chrisfurry_spritefonts/icons/SpriteFont.png"
-dest_files=["res://.godot/imported/SpriteFont.png-9f1f2102a4e50a2f99e7fb90100f8e88.ctex"]
+source_file="res://demo/ProgressBarDemo.png"
+dest_files=["res://.godot/imported/ProgressBarDemo.png-0f7baf81b31934ae335b54085e6e0512.ctex"]
 
 [params]
 
