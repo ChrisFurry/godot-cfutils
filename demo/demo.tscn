@@ -21,7 +21,7 @@ v_align = 1
 [node name="ProgressBarShowcase" type="Node2D" parent="."]
 position = Vector2(8, 80)
 script = ExtResource("3_nxv6h")
-progress = 0.337
+progress = 0.316
 bar_size = 80
 bar_texture = ExtResource("4_xgl56")
 back_texture = ExtResource("5_ty7vo")
