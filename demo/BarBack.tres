@@ -1,7 +1,7 @@
 [gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://ce7xgahe8whq2"]
 
-[ext_resource type="Texture2D" uid="uid://2ifdu5pu3qvs" path="res://demo/ProgressBarDemo.png" id="1_phi0s"]
+[ext_resource type="Texture2D" uid="uid://dto2bhchyqxi7" path="res://demo/ProgressBarDemo.webp" id="1_ipy11"]
 
 [resource]
-atlas = ExtResource("1_phi0s")
-region = Rect2(0, 0, 4, 8)
+atlas = ExtResource("1_ipy11")
+region = Rect2(0, 0, 2, 8)

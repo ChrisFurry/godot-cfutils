@@ -8,7 +8,8 @@ extends Node2D;
 		text = value;
 		queue_redraw();
 
-@export var font:Resource:
+## Takes a `SpriteFont`.
+@export var font:Resource: # Still a resource?? cringe.
 	set(value):
 		if(value == null): font = null;
 		if(value.has_method("is_valid")):
@@ -17,26 +18,37 @@ extends Node2D;
 				font.pre_calculate_character_sizes();
 				queue_redraw();
 				return;
-		print_debug("FONT IS NOT VALID PROGRAMMER FIX YOUR RESOURCE");
+		# That original comment sucked. - ChrisFurry 2024
+		print_debug("Font is not valid!");
 
+## Whether to force monospaced letters or not.
 @export var monospaced:bool			= false:
 	set(value):
 		monospaced = value;
 		queue_redraw();
 
+## Horizontal alignment, accepts 0, 1, and 2. (Left, Center, and Right)
 @export_enum("Left","Center","Right") var h_align:int = 0:
 	set(value):
 		h_align = value;
 		queue_redraw();
 
+## Vertical alignment, accepts 0, 1, and 2. (Top, Center, and Bottom)
 @export_enum("Top","Center","Bottom") var v_align:int = 0:
 	set(value):
 		v_align = value;
 		queue_redraw();
 
+## Additional character spacing, negative removes spacing.
 @export var character_spacing:Vector2i = Vector2i.ZERO:
 	set(value):
 		character_spacing = value;
+		queue_redraw();
+
+## Rotation of the letter's placement.
+@export_range(-180.0,180.0) var rotation_align:float = 0.0:
+	set(value):
+		rotation_align = value;
 		queue_redraw();
 
 func _draw():
@@ -69,7 +81,7 @@ func _draw():
 				# Check if this is even possible
 				if(font.has_character(letter) && letter != " "):
 					# Draw the letter
-					draw_letter(letter,Vector2(text_pos,line_y_offset + paragraph * (font.get_base_letter_size().y + character_spacing.y)));
+					draw_letter(letter,Vector2(text_pos,line_y_offset + paragraph * (font.get_base_letter_size().y + character_spacing.y)).rotated(deg_to_rad(rotation_align)));
 					# Add to text pos
 					if(monospaced): text_pos += font.get_base_letter_size().x + font.character_spacing + character_spacing.x;
 					else: text_pos += font.get_letter_size(letter).x + font.character_spacing + character_spacing.x;

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7nj61gmk4s73"
-path="res://.godot/imported/SonicCDFont.png-6f5eae6f75726001464322ec57d6b455.ctex"
+uid="uid://b33vekc7fioht"
+path="res://.godot/imported/SmallFontDemo.webp-e701dd93b21f57713ba10beedaca8a7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://demo/SonicCDFont.png"
-dest_files=["res://.godot/imported/SonicCDFont.png-6f5eae6f75726001464322ec57d6b455.ctex"]
+source_file="res://demo/SmallFontDemo.webp"
+dest_files=["res://.godot/imported/SmallFontDemo.webp-e701dd93b21f57713ba10beedaca8a7d.ctex"]
 
 [params]
 

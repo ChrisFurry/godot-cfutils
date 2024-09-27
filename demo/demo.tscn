@@ -13,25 +13,42 @@
 position = Vector2(120, 24)
 script = ExtResource("1_fwnur")
 text = "SPRITE FONTS DON'T HAVE TO BE
-MONOSPACE ONLY"
+MONOSPACE ONLY
+
+UPDATED NOW IT'S V1.5 I GUESS"
 font = ExtResource("2_8h6bm")
 h_align = 1
-v_align = 1
 
 [node name="ProgressBarShowcase" type="Node2D" parent="."]
-position = Vector2(8, 80)
+position = Vector2(8, 152)
 script = ExtResource("3_nxv6h")
-progress = 0.316
+progress = 0.467
 bar_size = 80
 bar_texture = ExtResource("4_xgl56")
 back_texture = ExtResource("5_ty7vo")
 
-[node name="SpriteLabel2D" type="Node2D" parent="."]
-position = Vector2(8, 56)
+[node name="SpriteLabelShowcase2" type="Node2D" parent="."]
+position = Vector2(8, 129)
 script = ExtResource("1_fwnur")
 text = "Progress bars are very *SIMPLE*
 Only requires a *BAR TEXTURE*
 But also takes a *BACK TEXTURE*
 
 Tiles with ATLASTEXTURES too!"
+font = ExtResource("6_i1ds6")
+
+[node name="SpriteLabelShowcase3" type="Node2D" parent="."]
+position = Vector2(120, 216)
+script = ExtResource("1_fwnur")
+text = "ALSO NOW ALL THE IMAGES ARE
+WEBP"
+font = ExtResource("2_8h6bm")
+h_align = 1
+v_align = 1
+rotation_align = 9.73
+
+[node name="the hehehaha" type="Node2D" parent="."]
+position = Vector2(144, 224)
+script = ExtResource("1_fwnur")
+text = "owo"
 font = ExtResource("6_i1ds6")

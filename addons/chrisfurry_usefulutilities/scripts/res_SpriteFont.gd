@@ -65,4 +65,3 @@ func get_character_texture_position(character:String)->Vector2:
 	if(!has_character(character)): return Vector2.ZERO;
 	var id = character_map.find(character);
 	return Vector2(id % h_frames,floor(id) / h_frames) * Vector2(get_base_letter_size());
-
